@@ -16,13 +16,13 @@ const Render = () => {
         setDataFromForm(dataFromForm => ([data,...dataFromForm]))
       
     }
-    
+
     return (
         <div className="container">
             <h1 className={styles.heading}>Render</h1>
             <Form getData = {getDataFromForm}/>
-         
-            <Users />
+            
+            <Users userData={dataFromForm}/>
         </div>
     )
 }
