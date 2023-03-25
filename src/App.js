@@ -1,7 +1,7 @@
 
 import styles from './App.module.css';
-import bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import Render from './Components/Render';
 

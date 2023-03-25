@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+                                
 import styles from './Form.module.css';
 
 
@@ -11,12 +11,15 @@ const Form = (props) => {
     });
 
 
+
+
     const handleChange = (e) => {
         const {id,value} = e.target;
         setFormData(formData => (
             {
                 ...formData,
-                [id]:value
+                [id]:value,
+                id : Math.floor(Math.random()*(100-1)+1)
             }));
     }
 
